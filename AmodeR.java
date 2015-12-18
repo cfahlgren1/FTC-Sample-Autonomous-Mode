@@ -1,3 +1,5 @@
+package com.qualcomm.ftcrobotcontroller.opmodes;
+
 import com.qualcomm.ftcrobotcontroller.opmodes;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -11,9 +13,9 @@ import com.qualcomm.robotcore.util.Range;
     Used thru 2015/2016 Academic Year */
 	
 
-public class Autonomous extends OpMode{
+public class Autonomous extends LinearOpMode{
     DcMotor motorLeft;
-    DcMotor moterRight;
+    DcMotor motorRight;
     DcMotor motorArm;
     Servo claw;
   
