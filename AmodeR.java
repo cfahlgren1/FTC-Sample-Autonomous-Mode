@@ -68,7 +68,6 @@ public void runOpMode() throws InterruptedException {
 
 	sleep(5500);
 	
-	System.exit(0);
         
         }
 }
