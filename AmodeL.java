@@ -1,11 +1,11 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 
 import com.qualcomm.ftcrobotcontroller.opmodes;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorController;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.util.Range;
+i
 
   /*Programmed by Caleb Fahlgren
     FTC Autonomous Robot Program
@@ -43,22 +43,22 @@ public void runOpMode() throws InterruptedException {
     // Will keep the claw closed during Autonomous
         clawPosition -= clawDelta;
         
-        sleep(5000);
+        
     // Drive forward for 3 seconds at half speed
-        leftMotor.setPower(0.5);
-        rightMotor.setPower(0.5);
+        leftMotor.setPower(-0.5);
+        rightMotor.setPower(-0.5);
         
         sleep(3000);
         
     // Turns left for 1.5 seconds at half speed           
-        leftMotor.setPower(-0.5);
-        rightMotor.setPower(0.5);
+        leftMotor.setPower(0.5);
+        rightMotor.setPower(-0.5);
         
         sleep(1500);
 
 
    // Drives backward for 3 seconds at half speed
-        leftMotor.setPower(-0.5);
+        leftMotor.setPower(0.5);
         rightMotor.setPower(-0.5);
 	        
         sleep(3000);   
