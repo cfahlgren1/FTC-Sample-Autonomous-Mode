@@ -21,7 +21,7 @@ public class Autonomous extends LinearOpMode{
   
 
     double clawPosition;
-    double clawDelta = 0.01;   
+    double clawDelta = 0;   
 
 public void runOpMode() throws InterruptedException { 
     
