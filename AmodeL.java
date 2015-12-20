@@ -21,7 +21,7 @@ public class Autonomous extends LinearOpMode{
   
 
     double clawPosition;
-    double clawDelta = 0;   
+    double clawDelta = 0.01;   
 
 public void runOpMode() throws InterruptedException { 
     
@@ -38,7 +38,7 @@ public void runOpMode() throws InterruptedException {
     motorRight.setChannelMode(DcMotorController.RunMode.RUN_WITHOUT_ENCODERS);
 
     // Variable showing that the claw position starts at 0.5
-        clawPosition = 0.1;
+        clawPosition = 0;
    
     // Will keep the claw closed during Autonomous
         clawPosition -= clawDelta;
