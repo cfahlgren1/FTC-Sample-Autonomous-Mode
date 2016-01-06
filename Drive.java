@@ -18,12 +18,18 @@ public void runOpMode() throws InteruptedException {
 	leftMotor.setPower(0.5);
 	rightMotor.setPower(0.5);
 
-	sleep(6000);
+	sleep(4000);
 
-	leftMotor.setPower(0);
+	leftMotor.setPower(0.5);
 	rightMotor.setPower(0);
+	
+	sleep(1000)
 
-	System.exit(0);
+
+	leftMotor.setPower(0.5);
+	rightMotor.setPower(0.5)
+
+	sleep(3000)
 
 }
 }
