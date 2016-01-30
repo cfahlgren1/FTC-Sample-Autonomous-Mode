@@ -88,45 +88,12 @@ public class AmodeL extends LinearOpMode{
 		for (runAMode=0; runAMode<2500; runAMode++){
 			motorLeft.setPower(0.5);
 			motorRight.setPower(-0.5);
+			
+		for (runAMode=0; runAMode<4000; runAMode++){
+			motorLeft.setPower(-0.5);
+			motorRight.setPower(-0.5);		
 		}
-		while (true){
-			//if touch sensor is pressed drive forward for half a second then put the servos
-			//back up then turn the motor power to 0
-			if(touchSensorLeft.isPressed){
-				motorLeft.setPower(0.5);
-				motorRight.setPower(0. 5);
-				sleep(500);
-				touchRight.setPosition(RIGHT_UP_POSITION);
-				touchLeft.setPosition(LEFT_UP_POSITION);
-				motorLeft.setPower(0);
-				motorRight.setPower(0);			
-				}
-			//if touch sensor is pressed drive forward for half a second then put the servos
-			//back up then turn the motor power to 0
-			else if(touchSensorRight.isPressed){
-				motorLeft.setPower(0.5);
-				motorRight.setPower(0.5);
-				sleep(500);
-				touchRight.setPosition(RIGHT_UP_POSITION);
-				touchLeft.setPosition(LEFT_UP_POSITION);
-				motorLeft.setPower(0);
-				motorRight.setPower(0);	
-				}
-			//if the touch sensors are not pressed then keep driving with
-			//the servos down
-			else{
-				motorLeft.setPower(-0.5);
-				motorRight.setPower(-0.5);
-				touchLeft.setPosition(LEFT_DOWN_POSITION);
-				touchRight.setPosition(RIGHT_DOWN_POSITION);
-				
-				}
-		//for 1500 milliseconds raise the arm
-		for (runAMode=0; runAMode<1500; runAMode++){
-			motorArm.setPower(0.2);
-			touchRight.setPosition(RIGHT_UP_POSITION);
-			touchLeft.setPosition(LEFT_UP_POSITION);
-			}	
-		}
+		motorLeft.setPower(0);
+		motorRight.setPower(0);		
 	}
 }
